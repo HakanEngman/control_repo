@@ -1,6 +1,6 @@
 node default {
 }
-$str = "$fqdn $kernel $dhcp"
+$str = "$fqdn $kernel $networking.dhcp"
 
 node 'master.puppet.vm' {
   include role::master_server
