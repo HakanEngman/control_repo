@@ -1,9 +1,9 @@
 class minecraft {
    file {'/opt/minecraft':
-      ensure: => directory,
+      ensure => directory,
       }
    file {'/opt/minecraft/server.jar':
-      ensure: => file,
+      ensure => file,
       source: https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar
     }
     package {'java':
