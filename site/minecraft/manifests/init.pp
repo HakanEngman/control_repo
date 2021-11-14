@@ -9,11 +9,11 @@ class minecraft {
     package {'java':
        ensure => present,
     }
-    file {'/opt/minecraft/eula.txt'
+    file {'/opt/minecraft/eula.txt':
        ensure => file,
        content => 'eula=true'
     }
-    file {'/etc/sytemd/system/minecraft.service'
+    file {'/etc/sytemd/system/minecraft.service':
        ensure => file,
        source => 'puppet:///modules/minecraft/minecraft.service',
     }
