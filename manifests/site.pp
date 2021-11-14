@@ -20,6 +20,6 @@ node /^db/ {
    
 node /^mine/ { 
    include role::minecraft_server
-   include role::base
+   # include role::base
    }
 
