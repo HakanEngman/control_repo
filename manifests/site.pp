@@ -19,7 +19,7 @@ node /^db/ {
    }
    
 node /^mine/ { 
-   include role::minetest_server
+   include role::minecraft_server
    include role::base
    }
 
